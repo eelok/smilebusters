@@ -1,22 +1,23 @@
 import React from "react";
 import './menu-nav-mobile.scss';
 
-const MenuNavMobile =() =>{
-    return(
-        <div className="menu-wrap">
-            <in put type="checkbox" className="toggler"/>
-            <div className="hamburger"><div></div></div>
-            <div className='menu'>
-                <div>
-                    <div>
-                        <ul>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+const MenuNavMobile = () => {
+    return (
+        <div className="navigation">
+            <input type="checkbox" className="navigation__checkbox"/>
+            {/*//пустой div для того, что бы там отобразить горизонтальные палки*/}
+            <label className="navigation__background">
+                <div>&nbsp</div>
+            </label>
+
+            <nav className='navigation__nav'>
+                <ul className='navigation__list'>
+                    <li className='navigation__item'><a href="#">Video</a></li>
+                    <li className='navigation__item'><a href="#">About</a></li>
+                    <li className='navigation__item'><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
         </div>
     )
 }
