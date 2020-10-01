@@ -1,0 +1,14 @@
+.content{
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  padding: 20px;
+
+  &__text{
+    text-align: center;
+    line-height: 1.5;
+  }
+}
