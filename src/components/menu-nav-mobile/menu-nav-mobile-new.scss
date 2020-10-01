@@ -1,6 +1,6 @@
-.navigation{
+.navigation {
 
-  &__checkbox{
+  &__checkbox {
     position: fixed;
     top: 0.5rem;
     right: 0.5rem;
@@ -23,7 +23,7 @@
     cursor: pointer;
   }
 
-  &__background{
+  &__background {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -36,7 +36,7 @@
     transition: transfomr .8s;
   }
 
-  &__nav{
+  &__nav {
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -51,7 +51,7 @@
   }
 
 
-  &__list{
+  &__list {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -62,12 +62,12 @@
     text-align: center;
   }
 
-  &__item{
+  &__item {
     margin: 1.5rem;
   }
 
 
-  &__link{
+  &__link {
     font-size: 2.5rem;
     font-weight: 300;
     text-decoration: none;
@@ -86,32 +86,51 @@
     visibility: visible;
     opacity: 1;
   }
-  //three line icon
 
+  //three line icon
   &__icon {
     position: relative;
-    margin-top: 2.5rem;
+    top: 3.5rem;
+
     &,
     &::before,
-    &::after{
+    &::after {
       width: 3rem;
       height: 3px;
+      left: 0;
       background-color: #111;
       display: inline-block;
     }
 
     &::before,
-    &::after{
+    &::after {
       content: "";
       position: absolute;
-      left: 0;
+      transition: all .1s;
     }
 
-    &::before{
-      top: 2rem;
-    }
-    &::after{
+    &::before {
       top: 1rem;
     }
+
+    &::after {
+      top: -1rem;
+    }
   }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+
 }
