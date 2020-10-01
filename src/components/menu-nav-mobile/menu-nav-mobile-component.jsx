@@ -7,8 +7,10 @@ const MenuNavMobile = () => {
         <div className="navigation">
             <input type="checkbox" className="navigation__checkbox" id="navi-toggle"/>
             {/*//пустой div для того, что бы там отобразить горизонтальные палки*/}
-            <label htmlFor="navi-toggle" className="navigation__button">MENU</label>
-            <div className="navigation__background">&nbsp </div>
+            <label htmlFor="navi-toggle" className="navigation__button">
+                <span className="navigation__icon">&nbsp;</span>
+            </label>
+            <div className="navigation__background">&nbsp;</div>
 
             <nav className='navigation__nav'>
                 <ul className='navigation__list'>
