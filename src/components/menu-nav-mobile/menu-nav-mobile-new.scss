@@ -1,0 +1,72 @@
+.navigation{
+
+  &__checkbox{
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 6rem;
+    width: 6rem;
+    display: none;
+  }
+
+  &__button {
+    height: 7rem;
+    width: 7rem;
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: 2000;
+  }
+
+  &__background{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: #E9E6DF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  &__nav{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+
+  }
+
+  &__list{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+  }
+
+  &__item{
+    margin: 1.5rem;
+  }
+
+
+  &__link{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #111;
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+}

@@ -15,6 +15,38 @@ const HomePage = () => {
                     musicians and composers.</p>
                 <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
                     musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
+                <p>Smilebusters is a kids jazz/funk/fusion band from Russia. The band plays covers of world famous
+                    musicians and composers.</p>
             </section>
         </div>
     )
