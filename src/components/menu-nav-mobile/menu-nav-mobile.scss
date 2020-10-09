@@ -8,6 +8,9 @@
     width: 4.5rem;
     display: none;
 
+    @media(min-width: 769px) {
+      display: none;
+    }
   }
 
   &__button {
@@ -16,24 +19,29 @@
     position: fixed;
     top: 0;
     right: 0;
-    //background-color: lightgoldenrodyellow;
     z-index: 2000;
 
     text-align: center;
     cursor: pointer;
+
+    @media(min-width: 769px) {
+      display: none;
+    }
   }
 
   &__background {
     height: 4.5rem;
     width: 4.5rem;
-    //background-color: lightblue;
-    //background-color: #E9E6DF;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
 
     transition: transfomr .8s;
+
+    @media(min-width: 769px) {
+      display: none;
+    }
   }
 
   &__nav {
@@ -48,6 +56,13 @@
     opacity: 0;
     visibility: hidden;
     transition: transfomr .8s;
+
+    @media(min-width: 769px) {
+      position: static;
+      height: 3.75rem;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
 
@@ -60,10 +75,22 @@
     align-items: center;
     list-style: none;
     text-align: center;
+
+    @media(min-width: 769px) {
+      height: 3.75rem;
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
   }
 
   &__item {
     margin: 1.5rem;
+
+    @media(min-width: 769px) {
+      margin: 0;
+    }
   }
 
 
@@ -75,6 +102,11 @@
     cursor: pointer;
     padding: 0.5rem;
     color: #111;
+
+    @media(min-width: 769px) {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
   }
 
   //functionality

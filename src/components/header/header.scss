@@ -1,12 +1,23 @@
 .header {
-  height: 60px;
+  height: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   color: #111;
 
-  &__logo {
-    z-index: 2;
+  &__logo{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  @media(min-width: 769px) {
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+      padding-left: 1.30rem;
+    }
   }
 }

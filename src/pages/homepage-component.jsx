@@ -8,9 +8,18 @@ const HomePage = () => {
         <div>
             <Header/>
             <main className="content">
-                <h2 className='content__text'>
-                    We are a kids <br/>jazz - funk - fusion<br/> band from Russia. We play covers of world famous musicians and composers.
-                </h2>
+                <p className='content__text'>
+                    We are a kids
+                </p>
+                <p className='content__text'>
+                    jazz - funk - fusion
+                </p>
+                <p className='content__text'>
+                    band from Russia.
+                </p>
+                <p className='content__text'>
+                    We play covers of world famous musicians and composers.
+                </p>
             </main>
         </div>
     )

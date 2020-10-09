@@ -19,7 +19,6 @@ const MenuNavMobile = () => {
                     <li className='navigation__item'><Link className="navigation__link" to={"/contact"}>Contact</Link></li>
                 </ul>
             </nav>
-
         </div>
     )
 }
