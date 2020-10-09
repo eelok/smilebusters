@@ -1,5 +1,4 @@
 .content{
-  background-color: lightblue;
   height: 60vh;
   width: 100%;
   display: flex;
@@ -20,9 +19,6 @@
 
     @media(min-width: 759px) {
       width: 80%;
-      &:nth-child(1){
-        white-space: nowrap;
-      }
     }
   }
 
