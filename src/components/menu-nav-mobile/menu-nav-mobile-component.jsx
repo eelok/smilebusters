@@ -1,6 +1,6 @@
 import React from "react";
-import './menu-nav-mobile-new.scss';
 import {Link} from "react-router-dom";
+import './menu-nav-mobile.scss';
 
 const MenuNavMobile = () => {
     return (
@@ -14,9 +14,9 @@ const MenuNavMobile = () => {
 
             <nav className='navigation__nav'>
                 <ul className='navigation__list'>
-                    <li className='navigation__item'><Link className="navigation__link" to={"#"}>Video</Link></li>
-                    <li className='navigation__item'><Link className="navigation__link" to={"#"}>About</Link></li>
-                    <li className='navigation__item'><Link className="navigation__link" to={"#"}>Contact</Link></li>
+                    <li className='navigation__item'><Link className="navigation__link" to={"/videos"}>Video</Link></li>
+                    <li className='navigation__item'><Link className="navigation__link" to={"/about"}>About</Link></li>
+                    <li className='navigation__item'><Link className="navigation__link" to={"/contact"}>Contact</Link></li>
                 </ul>
             </nav>
 
