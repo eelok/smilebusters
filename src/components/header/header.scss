@@ -1,7 +1,7 @@
 .header {
   height: 3.75rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 1.25rem;
   color: #111;
@@ -9,6 +9,8 @@
   &__logo{
     font-size: 2rem;
     font-weight: 400;
+    text-decoration: none;
+    color: #111;
   }
 
   @media(min-width: 769px) {

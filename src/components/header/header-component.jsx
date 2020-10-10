@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import './header.scss'
 import MenuNavMobile from "../menu-nav-mobile/menu-nav-mobile-component";
 
@@ -6,7 +7,7 @@ const Header = () => {
     return (
         <>
             <header className="header">
-                <h1 className="header__logo">Smilebusters</h1>
+                <Link className="header__logo" to={'/'}>Smilebusters</Link>
                 <MenuNavMobile/>
             </header>
         </>
