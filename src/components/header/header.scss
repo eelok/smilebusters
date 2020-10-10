@@ -1,11 +1,14 @@
 .header {
   height: 3.75rem;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 1.25rem;
   color: #111;
-  background-color: blue;
+
+  position: fixed;
 
   &__logo{
     position: fixed;
