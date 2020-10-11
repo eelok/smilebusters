@@ -9,7 +9,7 @@
   }
 
   &__image {
-    width: 120px;
+    width: 160px;
     height: 90px;
     margin-right: 0.7rem;
   }
@@ -22,9 +22,14 @@
     padding-right: 0.5rem;
 
     h3 {
-      font-size: 0.90rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       margin-bottom: 0.2rem;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     p {
