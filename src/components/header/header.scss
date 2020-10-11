@@ -12,21 +12,18 @@
   top: 0;
   left: 0;
 
-  &__logo{
-    position: fixed;
+  @media(min-width: 769px) {
+    position: static;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
     color: #111;
   }
 
-  @media(min-width: 769px) {
-    padding: 1rem;
-    justify-content: space-between;
-    align-items: center;
-
-    &__logo{
-      padding-left: 1.30rem;
-    }
-  }
 }

@@ -14,9 +14,9 @@ const MenuNavMobile = () => {
 
             <nav className='navigation__nav'>
                 <ul className='navigation__list'>
-                    <li className='navigation__item'><Link className="navigation__link" to={"/videos"}>Video</Link></li>
-                    <li className='navigation__item'><Link className="navigation__link" to={"/about"}>About</Link></li>
-                    <li className='navigation__item'><Link className="navigation__link" to={"/contact"}>Contact</Link></li>
+                    <li><Link className="navigation__link" to={"/videos"}>Video</Link></li>
+                    <li><Link className="navigation__link" to={"/about"}>About</Link></li>
+                    <li><Link className="navigation__link" to={"/contact"}>Contact</Link></li>
                 </ul>
             </nav>
         </div>

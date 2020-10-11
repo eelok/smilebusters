@@ -1,6 +1,10 @@
 .container {
   margin: 3.5rem 1rem 0 1rem;
 
+  @media(min-width: 769px){
+    margin-top: 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: row;
@@ -38,9 +42,11 @@
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+
+      @media(min-width: 769px){
+        -webkit-line-clamp: 3;
+      }
     }
 
   }
-
-
 }
