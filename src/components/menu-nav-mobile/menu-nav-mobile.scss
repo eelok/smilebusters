@@ -52,7 +52,6 @@
     right: 0;
     z-index: 1500;
 
-    //todo проблема
     opacity: 0;
     visibility: hidden;
     transition: transfomr .8s;
@@ -102,9 +101,6 @@
     padding: 0.5rem;
     color: #111;
 
-    &:hover{
-      color: orange;
-    }
 
     @media(min-width: 769px) {
       font-size: 1.2rem;
