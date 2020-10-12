@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import './videos-page-style.scss'
-import {Link} from "react-router-dom";
 
 class VideosPage extends Component {
 
@@ -26,8 +25,6 @@ class VideosPage extends Component {
     }
 
     render() {
-        let key = 'AIzaSyD8_AOJJfBztUSGKL8DP2aYf4FWM_iMLx0';
-        let playlistId = 'PLQG761_nUb0p0H9d5xwdhxpsN9WMdvVzw';
         console.log('render');
         let {playlistItems} = this.state;
         return (
