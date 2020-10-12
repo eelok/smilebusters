@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import './videos-page-style.scss'
+import {Link} from "react-router-dom";
 
 class VideosPage extends Component {
 
@@ -18,12 +19,15 @@ class VideosPage extends Component {
         let url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${key}&playlistId=${playlistId}&part=snippet&maxResults=50`;
         let response = await fetch(url);
         let youtubeObject = await response.json();
+        console.log(youtubeObject)
         const { items } = youtubeObject;
         console.log(items.map(item => item.snippet));
         this.setState({playlistItems: items});
     }
 
     render() {
+        let key = 'AIzaSyD8_AOJJfBztUSGKL8DP2aYf4FWM_iMLx0';
+        let playlistId = 'PLQG761_nUb0p0H9d5xwdhxpsN9WMdvVzw';
         console.log('render');
         let {playlistItems} = this.state;
         return (
@@ -31,9 +35,9 @@ class VideosPage extends Component {
                 {
                     playlistItems.map(item =>
                         <section key={item.id} className="container__content" >
-                            <img className="container__image" src={item.snippet.thumbnails.medium.url} alt=""/>
+                            <a href={`//www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}><img className="container__image" src={item.snippet.thumbnails.medium.url} alt=""/></a>
                             <div className="container__text">
-                                <h3>{item.snippet.title}</h3>
+                                <h3><a href={`//www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}>{item.snippet.title}</a></h3>
                                 <p>{item.snippet.description}</p>
                             </div>
                         </section>
