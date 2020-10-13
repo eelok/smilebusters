@@ -127,10 +127,11 @@
     &,
     &::before,
     &::after {
-      width: 2.5rem;
-      height: 2.5px;
+      width: 2rem;
+      height: 2px;
+      border-radius: 5px;
       left: 0;
-      background-color: #111;
+      background-color: #be1e2c;
       display: inline-block;
     }
 

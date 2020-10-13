@@ -6,7 +6,7 @@ import AboutPage from "./pages/about-page-component"
 import ContactPage from "./pages/contact-page-component";
 import VideosPage from "./pages/videos-page-component";
 import Header from "./components/header/header-component";
-
+import Footer from './components/footer/footer-component'
 
 function App() {
     return (
@@ -18,6 +18,7 @@ function App() {
                 <Route path="/contact" component={ContactPage}/>
                 <Route path="/videos" component={VideosPage}/>
             </Switch>
+            <Footer/>
         </div>
     );
 }

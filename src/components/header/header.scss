@@ -1,12 +1,13 @@
 .header {
-  height: 3.75rem;
+  height: 4.2rem;
   width: 100%;
+  //background-color: rgba(207, 204, 214, 0.99);
   background-color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   padding: 1.25rem;
   color: #111;
+  z-index: 1000;
 
   position: fixed;
   top: 0;
@@ -19,11 +20,17 @@
     align-items: center;
   }
 
-  &__logo {
-    font-size: 2rem;
-    font-weight: 400;
-    text-decoration: none;
-    color: #111;
+  &__logo{
+    position: relative;
   }
 
+  &__icon{
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 10000;
+  }
 }

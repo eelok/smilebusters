@@ -1,0 +1,37 @@
+.social {
+  width: 100%;
+  padding: 0.5rem;
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+
+    img{
+      width: 1.5rem;
+      height: 1.5rem;
+      z-index: 1000;
+    }
+  }
+
+  &__item{
+    margin: 0.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--instagram{
+      background-color: #bc2a8d;
+    }
+    &--vk{
+      background-color: #4c75a3;
+    }
+    &--youtube{
+      background-color: #c4302b;
+    }
+  }
+
+
+}
