@@ -5,21 +5,15 @@ const Footer = () => {
     return (
         <footer className="social">
             <section className="social__icons">
-                <a href={`https://www.instagram.com/smilebustersband/`}>
-                    <div className="social__item social__item--instagram">
-                        <img src={require("../../assets/instagram.svg")} alt="instagram icon"/>
-                    </div>
-                </a>
-                <a href={`https://vk.com/smilebusters/`}>
-                    <div className="social__item social__item--vk">
-                        <img src={require("../../assets/vk.svg")} alt="vk icon"/>
-                    </div>
-                </a>
-                <a href={`https://www.youtube.com/channel/UCXhomF9JifKzZ4CbcP1zLtA/videos`}>
-                    <div className="social__item social__item--youtube">
-                        <img src={require("../../assets/youtube.svg")} alt="youtube icon"/>
-                    </div>
-                </a>
+                <a className="social__item social__item--instagram"
+                   href={`https://www.instagram.com/smilebustersband/`}
+                >&nbsp;</a>
+                <a className="social__item social__item--vk"
+                   href={`https://vk.com/smilebusters/`}
+                >&nbsp;</a>
+                <a className="social__item social__item--youtube"
+                   href={`https://www.youtube.com/channel/UCXhomF9JifKzZ4CbcP1zLtA/videos`}
+                >&nbsp;</a>
             </section>
         </footer>
     )
