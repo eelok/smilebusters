@@ -4,7 +4,7 @@ import './homepage.scss'
 
 const HomePage = () => {
     return (
-        <section className="content content__container">
+        <section className="content">
             <div className="content__text">
                 <h1>Smilebusters</h1>
                 <p> jazz - funk - fusion band</p>
