@@ -21,7 +21,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     height: 4.5rem;
     width: 4.5rem;
     position: absolute;
@@ -152,6 +151,7 @@
     }
 
     &::after {
+      right: 0px;
       top: -0.5rem;
     }
   }
