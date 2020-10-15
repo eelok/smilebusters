@@ -1,17 +1,21 @@
 .header {
-  height: 10vh;
   width: 100%;
-  //background-color: rgba(207, 204, 214, 0.99);
-  background-color: blue;
-  display: flex;
-  justify-content: flex-start;
   padding: 1.25rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
   color: #111;
   z-index: 1000;
 
   position: fixed;
   top: 0;
   left: 0;
+
+  a {
+    display: flex;
+  }
+
+
 
   @media(min-width: 769px) {
     position: static;
@@ -20,12 +24,10 @@
     align-items: center;
   }
 
-  &__icon{
+  &__icon {
     height: 40px;
     width: 40px;
     border-radius: 5px;
-    //top: -8px;
-    //left: 0;
     z-index: 10000;
   }
 }

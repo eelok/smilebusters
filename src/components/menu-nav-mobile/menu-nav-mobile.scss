@@ -1,4 +1,8 @@
 .navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__checkbox {
     position: fixed;
@@ -6,7 +10,7 @@
     right: 0;
     height: 4rem;
     width: 4.5rem;
-    display: none;
+    opacity: 0;
 
     @media(min-width: 769px) {
       display: none;
@@ -14,14 +18,15 @@
   }
 
   &__button {
-    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 4.5rem;
     width: 4.5rem;
-    position: fixed;
-    top: 0;
+    position: absolute;
     right: 0;
     z-index: 2000;
-
-    text-align: center;
     cursor: pointer;
 
     @media(min-width: 769px) {
@@ -121,16 +126,16 @@
 
   //three line icon
   &__icon {
-    position: relative;
-    top: 2rem;
 
     &,
     &::before,
     &::after {
+      position: relative;
       width: 1.80rem;
       height: 2px;
       border-radius: 5px;
-      left: 0;
+      //top: 35px;
+      //right: 0;
       background-color: #be1e2c;
       display: inline-block;
     }
