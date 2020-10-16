@@ -7,7 +7,9 @@ const HomePage = () => {
         <section className="content">
             <div className="content__text">
                 <h1>Smilebusters</h1>
-                <p> jazz - funk - fusion band</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, expedita.</p>
+                <p>jazz - funk - fusion band</p>
+                <button className='btn margin-top'>News</button>
             </div>
         </section>
     )

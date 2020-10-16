@@ -1,8 +1,20 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.App{
-  padding-top: 80px;
+
+.App {
+    padding-top: 60px;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #be1e2c;
+    color: #f4f4f4;
+    outline: none;
 }
