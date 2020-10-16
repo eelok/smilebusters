@@ -13,7 +13,7 @@ const AboutPage = () => {
             </section>
             <h2>Crew</h2>
             <div className="crew__box">
-                <div className="crew__img"><img  src="https://picsum.photos/id/1027/350/200" alt="Person1"/></div>
+                <div className="crew__img"><img  src="https://picsum.photos/id/1027/345/200" alt="Person1"/></div>
                 <div className="crew__info">
                     <h4 className="crew__name">Anastasia Tkachenko</h4>
                     <h4 className="crew__instrument">Piano</h4>
@@ -22,7 +22,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="crew__box">
-                <div className="crew__img"><img  src="https://picsum.photos/id/836/350/200" alt="Person1"/></div>
+                <div className="crew__img"><img  src="https://picsum.photos/id/836/345/200" alt="Person1"/></div>
                 <div className="crew__info">
                     <h4 className="crew__name">Bob Marley</h4>
                     <h4 className="crew__instrument">Guitar</h4>
@@ -31,7 +31,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="crew__box">
-                <div className="crew__img"><img  src="https://picsum.photos/id/91/350/200" alt="Person1"/></div>
+                <div className="crew__img"><img  src="https://picsum.photos/id/91/345/200" alt="Person1"/></div>
                 <div className="crew__info">
                     <h4 className="crew__name">Tom Tailor</h4>
                     <h4 className="crew__instrument">Guitar</h4>
@@ -40,7 +40,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className="crew__box">
-                <div className="crew__img"><img  src="https://picsum.photos/id/856/350/200" alt="Person1"/></div>
+                <div className="crew__img"><img  src="https://picsum.photos/id/856/345/200" alt="Person1"/></div>
                 <div className="crew__info">
                     <h4 className="crew__name">Adriano Chellinatano</h4>
                     <h4 className="crew__instrument">Drums</h4>
