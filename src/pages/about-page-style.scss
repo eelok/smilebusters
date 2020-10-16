@@ -1,0 +1,59 @@
+.crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  color: #333;
+
+  h2 {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+  }
+
+  &__story {
+    text-align: center;
+
+    h3 {
+      font-size: 1.25rem;
+      padding: 0.5rem 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 1.5;
+      padding: 0 0.5rem;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img{
+    height: 200px;
+    width: 300px  ;
+  }
+
+  &__info{
+    width: 300px;
+    text-align: left;
+    padding: 1rem;
+    //background: rgba(208, 204, 208, 1);
+    //box-shadow: rgba(0, 0, 0, 0.1);
+  }
+  &__name {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  &__instrument {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    text-align: left;
+  }
+
+}
