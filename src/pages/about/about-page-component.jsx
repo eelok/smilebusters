@@ -25,20 +25,19 @@ class AboutPage extends React.Component {
                         soluta voluptates.</p>
                 </section>
                 <h2>Crew</h2>
-                <div className="crew__box">
-                    {
-                        crew.map(person => (
-                            <>
-                                <div className="crew__img"><img src={person.img_url} alt="Person1"/></div>
-                                <div className="crew__info">
-                                    <h4 className="crew__name">{person.name}</h4>
-                                    <h4 className="crew__instrument">{person.instrument}</h4>
-                                    <p>{person.info}</p>
-                                </div>
-                            </>
-                        ))
-                    }
-                </div>
+                {
+                    crew.map(person => (
+                        <div className="crew__box" key={person.id}>
+                            <img className="crew__img" src={person.img_url} alt="Person1"/>
+                            <div className="crew__info">
+                                <h4 className="crew__name">{person.name}</h4>
+                                <h4 className="crew__instrument">{person.instrument}</h4>
+                                <p>{person.info}</p>
+                            </div>
+                        </div>
+                    ))
+                }
+
             </article>
         )
     }
