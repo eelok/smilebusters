@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from "./pages/homepage-component";
-import AboutPage from "./pages/about-page-component"
+import AboutPage from "./pages/about/about-page-component"
 import ContactPage from "./pages/contact-page-component";
 import VideosPage from "./pages/videos-page-component";
 import Header from "./components/header/header-component";
