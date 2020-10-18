@@ -14,8 +14,6 @@ class AboutPage extends React.Component {
     render() {
         const {crew} = this.state;
         return (
-
-            // <article className="crew">
             <article>
                 <header className='about-header'>
                     <h3>Our Story</h3>
@@ -42,7 +40,6 @@ class AboutPage extends React.Component {
                         ))
                     }
                 </section>
-
             </article>
         )
     }
