@@ -17,7 +17,7 @@ class VideosPage extends Component {
         let url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${key}&playlistId=${playlistId}&part=snippet&maxResults=50`;
         let response = await fetch(url);
         let youtubeObject = await response.json();
-        const { items } = youtubeObject;
+        const {items} = youtubeObject;
         this.setState({playlistItems: items});
     }
 
@@ -25,17 +25,23 @@ class VideosPage extends Component {
         let {playlistItems} = this.state;
         return (
             <article className="responsive-container">
-                {
-                    playlistItems.map(item =>
-                        <section key={item.id} className="container__content" >
-                            <a href={`//www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}><img className="container__image" src={item.snippet.thumbnails.medium.url} alt=""/></a>
-                            <div className="container__text">
-                                <h3><a href={`//www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}>{item.snippet.title}</a></h3>
-                                <p>{item.snippet.description}</p>
-                            </div>
-                        </section>
-                    )
-                }
+                <section className="list-items">
+                    {
+                        playlistItems.map(item =>
+                            <section key={item.id} className="item-box">
+                                <a href={`//www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}>
+                                    <img className="container__image" src={item.snippet.thumbnails.medium.url} alt="video cover "/>
+                                </a>
+                                <div className="item-text">
+                                    <h3>
+                                        <a href={`//www.youtube.com/watch?v=${item.snippet.resourceId.videoId}`}>{item.snippet.title}</a>
+                                    </h3>
+                                    <p>{item.snippet.description}</p>
+                                </div>
+                            </section>
+                        )
+                    }
+                </section>
             </article>
         )
     }

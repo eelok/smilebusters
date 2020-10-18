@@ -6,12 +6,16 @@ import MenuNavMobile from "../menu-nav-mobile/menu-nav-mobile-component";
 
 const Header = () => {
     return (
-        <header className="header responsive-container">
-            <Link to={'/'}>
-                <Logo className="header__icon"/>
-            </Link>
-            <MenuNavMobile/>
-        </header>
+
+        <div className="header-wrapper">
+            <header className="header responsive-container">
+                <Link to={'/'}  className="logo__wrapper">
+                    <Logo className="header__icon"/>
+                </Link>
+                <MenuNavMobile/>
+            </header>
+        </div>
+
     )
 }
 export default Header;
