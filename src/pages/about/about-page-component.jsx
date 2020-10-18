@@ -14,29 +14,34 @@ class AboutPage extends React.Component {
     render() {
         const {crew} = this.state;
         return (
-            <article className="crew">
-                <section className='crew__story'>
+
+            // <article className="crew">
+            <article>
+                <header className='about-header'>
                     <h3>Our Story</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam cumque dolor error fuga porro
                         quae
                         recusandae similique ullam voluptas! Beatae doloribus dolorum explicabo maiores pariatur
                         provident
                         quo,
-                        soluta voluptates.</p>
+                        soluta voluptates.
+                    </p>
+                    <h2>Crew</h2>
+                </header>
+                <section className="cards">
+                    {
+                        crew.map(person => (
+                            <section className="card" key={person.id}>
+                                <img src={person.img_url} alt="Person1"/>
+                                <div className='card__info'>
+                                    <h4 className="crew__item crew__name">{person.name}</h4>
+                                    <h5 className="crew__item crew__instrument">{person.instrument}</h5>
+                                    <p>{person.info}</p>
+                                </div>
+                            </section>
+                        ))
+                    }
                 </section>
-                <h2>Crew</h2>
-                {
-                    crew.map(person => (
-                        <div className="crew__box" key={person.id}>
-                            <img className="crew__img" src={person.img_url} alt="Person1"/>
-                            <div className="crew__info">
-                                <h4 className="crew__name">{person.name}</h4>
-                                <h4 className="crew__instrument">{person.instrument}</h4>
-                                <p>{person.info}</p>
-                            </div>
-                        </div>
-                    ))
-                }
 
             </article>
         )

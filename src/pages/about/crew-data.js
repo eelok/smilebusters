@@ -1,8 +1,8 @@
 const CREW_DATA = [
     {
         id : 1,
-        name : "Aleksei Tkachenko",
-        instrument: 'manager',
+        name : "Adriano Celentano",
+        instrument: 'drums',
         img_url: "https://picsum.photos/id/1/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 
@@ -41,8 +41,8 @@ const CREW_DATA = [
     },
     {
         id : 5,
-        name : "Adriano Celentano",
-        instrument: 'drums',
+        name : "Aleksei Tkachenko",
+        instrument: 'manager',
         img_url : "https://picsum.photos/id/1044/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 
