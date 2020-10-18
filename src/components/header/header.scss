@@ -15,9 +15,8 @@
     padding: 0.7rem 1.25rem 0.7rem;
   }
 
-
-
   @media(min-width: 769px) {
+    position: static;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;

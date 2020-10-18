@@ -5,7 +5,7 @@ import './about/about-page-style.scss'
 
 const HomePage = () => {
     return (
-        <section className="content">
+        <section className="content responsive-container">
             <div className="content__text">
                 <h1>Smilebusters</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, expedita.</p>

@@ -14,7 +14,7 @@ class AboutPage extends React.Component {
     render() {
         const {crew} = this.state;
         return (
-            <article>
+            <article className='responsive-container'>
                 <header className='about-header'>
                     <h3>Our Story</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam cumque dolor error fuga porro

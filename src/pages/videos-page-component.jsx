@@ -24,7 +24,7 @@ class VideosPage extends Component {
     render() {
         let {playlistItems} = this.state;
         return (
-            <article className="container">
+            <article className="responsive-container">
                 {
                     playlistItems.map(item =>
                         <section key={item.id} className="container__content" >

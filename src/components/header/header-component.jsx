@@ -6,7 +6,7 @@ import MenuNavMobile from "../menu-nav-mobile/menu-nav-mobile-component";
 
 const Header = () => {
     return (
-        <header className="header">
+        <header className="header responsive-container">
             <Link to={'/'}>
                 <Logo className="header__icon"/>
             </Link>
