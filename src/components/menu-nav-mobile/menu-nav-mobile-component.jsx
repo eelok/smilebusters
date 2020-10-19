@@ -38,9 +38,9 @@ class MenuNavMobile extends Component {
 
                 <nav className='navigation__nav'>
                     <ul className='navigation__list'>
-                        <li onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/videos"}>Video</Link></li>
-                        <li onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/about"}>About</Link></li>
-                        <li onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/contact"}>Contact</Link></li>
+                        <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/videos"}>Video</Link></li>
+                        <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/about"}>About</Link></li>
+                        <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/contact"}>Contact</Link></li>
                     </ul>
                 </nav>
             </div>
