@@ -15,16 +15,10 @@ class ContactPage extends React.Component {
     }
 
     handleSubmit = (event) => {
+        let formData = new FormData(event.target);
+        let data = Object.fromEntries(formData);
         event.preventDefault();
-        console.log(this.state)
-    }
-
-
-    handleChange = (event) => {
-        const value = event.target.value;
-        this.setState({
-            [event.target.name] : value
-        });
+        console.log(data)
     }
 
     render() {
@@ -40,8 +34,7 @@ class ContactPage extends React.Component {
                                    type='text'
                                    id='name'
                                    name='name'
-                                   value={name}
-                                   onChange={this.handleChange}
+                                   defaultValue={name}
                                    required={true}
                             />
                         </div>
@@ -51,8 +44,7 @@ class ContactPage extends React.Component {
                                    type='email'
                                    id='email'
                                    name='email'
-                                   value={email}
-                                   onChange={this.handleChange}
+                                   defaultValue={email}
                                    required={true}/>
                         </div>
                         <div className='group'>
@@ -60,14 +52,13 @@ class ContactPage extends React.Component {
                             <input className='group__input'
                                    type='tel'
                                    name='phone'
-                                   value={phone}
-                                   onChange={this.handleChange}
+                                   defaultValue={phone}
                                    id='phone'
                             />
                         </div>
                         <div className='group'>
                             <label className='group__name' htmlFor='message'>Your Message</label>
-                            <textarea className='group__message' id='message' name='message' value={message}/>
+                            <textarea className='group__message' id='message' name='message' defaultValue={message}/>
                         </div>
                         <div className='group'>
                             <button className='btn group__submit' type="submit" name='submit'>Submit</button>
