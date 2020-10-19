@@ -29,3 +29,14 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.main-header{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.secondary-header{
+    font-size: 1.20rem;
+    text-transform: uppercase;
+    padding: 0.7rem 0;
+}
