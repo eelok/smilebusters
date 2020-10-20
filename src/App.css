@@ -15,7 +15,8 @@
 }
 
 .btn {
-    padding: 0.5rem 1rem;
+    width: 250px;
+    padding: 0.8rem 1rem;
     border: 1px solid transparent;
     border-radius: 2px;
     font-size: 1rem;
@@ -47,4 +48,8 @@
     font-size: 1.20rem;
     text-transform: uppercase;
     padding: 0.7rem 0;
+}
+
+.text-highlight{
+    color: #AD2118;
 }

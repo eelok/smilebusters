@@ -2,33 +2,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-                  rgba(10, 67, 151, 0.35),
-                  rgba(10, 67, 151, 0.65)), url("../assets/images/007A9978-cut2-min.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 550px;
-  width: 100%;
+  //background-image: linear-gradient(
+  //                rgba(10, 67, 151, 0.35),
+  //                rgba(10, 67, 151, 0.65)), url("../assets/images/007A9807-cut.jpg");
+  //background-image: url("https://picsum.photos/id/1/200/300");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: cover;
+  //height: 550px;
+  //width: 100%;
 
   &__text {
     text-align: center;
-    color: #f4f4f4;
+    color: #461500;
+
+    img{
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+    }
 
     h1 {
+      margin: 0.3rem;
       font-size: 2.75rem;
       font-weight: 800;
-      margin-bottom: 1.5rem;
+      //margin-bottom: 0.5rem;
+      color: #AD2118;
       z-index: 3000;
     }
 
     p {
       font-size: 1.80rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0.5rem;
+      color: #451400;
     }
   }
 }
 
 .margin-top{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
