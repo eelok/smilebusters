@@ -1,8 +1,12 @@
 import React from "react";
 import './contac-page-style.scss';
+import { useHistory } from 'react-router-dom';
 import {db} from '../../firebase';
 
 const ContactPage = () => {
+
+    //не уверенна, что так можно сделать
+    const history = useHistory();
 
 //почему тут нужно  const
    const handleSubmit = (event) => {
@@ -11,7 +15,7 @@ const ContactPage = () => {
         let data = Object.fromEntries(formData);
         db.collection('contacts').add(data)
             .then(() => {
-                alert('you Message has bin submitted ')
+                history.push('/message')
             })
             .catch(error => {
                 alert(error.message)
@@ -22,7 +26,7 @@ const ContactPage = () => {
         <div className='responsive-container'>
             <section className='contact-container'>
                 <h3 className='secondary-header'>Contact Us</h3>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className='message-send-successful'>
                     <div className='group'>
                         <label className='group__name' htmlFor='name'>Name</label>
                         <input className='group__input'
