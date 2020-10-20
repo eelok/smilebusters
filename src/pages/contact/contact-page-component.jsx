@@ -1,75 +1,67 @@
 import React from "react";
 import './contac-page-style.scss';
+import {db} from '../../firebase';
 
-class ContactPage extends React.Component {
-    constructor(props) {
-        super(props);
+const ContactPage = () => {
 
-        this.state = {
-            name: '',
-            email: '',
-            phone: '',
-            message: ''
-        }
-
-    }
-
-    handleSubmit = (event) => {
+//почему тут нужно  const
+   const handleSubmit = (event) => {
+        event.preventDefault();
         let formData = new FormData(event.target);
         let data = Object.fromEntries(formData);
-        event.preventDefault();
-        console.log(data)
+        db.collection('contacts').add(data)
+            .then(() => {
+                alert('you Message has bin submitted ')
+            })
+            .catch(error => {
+                alert(error.message)
+            });
     }
 
-    render() {
-        let {name, email, phone, message} = this.state;
-        return (
-            <div className='responsive-container'>
-                <section className='contact-container'>
-                    <h3 className='secondary-header'>Contact Us</h3>
-                    <form onSubmit={this.handleSubmit}>
-                        <div className='group'>
-                            <label className='group__name' htmlFor='name'>Name</label>
-                            <input className='group__input'
-                                   type='text'
-                                   id='name'
-                                   name='name'
-                                   defaultValue={name}
-                                   required={true}
-                            />
-                        </div>
-                        <div className='group'>
-                            <label className='group__name' htmlFor='email'>Email</label>
-                            <input className='group__input'
-                                   type='email'
-                                   id='email'
-                                   name='email'
-                                   defaultValue={email}
-                                   required={true}/>
-                        </div>
-                        <div className='group'>
-                            <label className='group__name' htmlFor='phone'>Phone <span>(Optional)</span></label>
-                            <input className='group__input'
-                                   type='tel'
-                                   name='phone'
-                                   defaultValue={phone}
-                                   id='phone'
-                            />
-                        </div>
-                        <div className='group'>
-                            <label className='group__name' htmlFor='message'>Your Message</label>
-                            <textarea className='group__message' id='message' name='message' defaultValue={message}/>
-                        </div>
-                        <div className='group'>
-                            <button className='btn group__submit' type="submit" name='submit'>Submit</button>
-                        </div>
-                    </form>
-                </section>
-            </div>
-        )
-    }
-
-
+    return (
+        <div className='responsive-container'>
+            <section className='contact-container'>
+                <h3 className='secondary-header'>Contact Us</h3>
+                <form onSubmit={handleSubmit}>
+                    <div className='group'>
+                        <label className='group__name' htmlFor='name'>Name</label>
+                        <input className='group__input'
+                               type='text'
+                               id='name'
+                               name='name'
+                               required={true}
+                        />
+                    </div>
+                    <div className='group'>
+                        <label className='group__name' htmlFor='email'>Email</label>
+                        <input className='group__input'
+                               type='email'
+                               id='email'
+                               name='email'
+                               required={true}/>
+                    </div>
+                    <div className='group'>
+                        <label className='group__name' htmlFor='phone'>Phone <span>(Optional)</span></label>
+                        <input className='group__input'
+                               type='tel'
+                               name='phone'
+                               id='phone'
+                        />
+                    </div>
+                    <div className='group'>
+                        <label className='group__name' htmlFor='message'>Your Message</label>
+                        <textarea className='group__message'
+                                  id='message'
+                                  name='message'
+                        />
+                    </div>
+                    <div className='group'>
+                        <button className='btn group__submit' type="submit" name='submit'>Submit</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    )
 }
 
 export default ContactPage;
