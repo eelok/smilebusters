@@ -5,7 +5,6 @@ import {db} from '../../firebase';
 
 const ContactPage = () => {
 
-    //не уверенна, что так можно сделать
     const history = useHistory();
 
 //почему тут нужно  const
@@ -60,7 +59,7 @@ const ContactPage = () => {
                         />
                     </div>
                     <div className='group'>
-                        <button className='btn group__submit' type="submit" name='submit'>Submit</button>
+                        <button className='btn bnt-contact group__submit' type="submit" name='submit'>Submit</button>
                     </div>
                 </form>
             </section>

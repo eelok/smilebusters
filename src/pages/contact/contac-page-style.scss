@@ -1,5 +1,5 @@
 .contact-container {
-  margin: 0.5rem;
+  margin: 0 1rem;
 }
 
 .group {
@@ -45,7 +45,6 @@
   }
 
   &__submit {
-    align-self: flex-end;
-
+    align-self: stretch;
   }
 }
