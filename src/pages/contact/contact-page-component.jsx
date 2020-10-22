@@ -1,6 +1,6 @@
 import React from "react";
 import './contac-page-style.scss';
-import { useHistory } from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import {db} from '../../firebase';
 
 const ContactPage = () => {
@@ -8,7 +8,7 @@ const ContactPage = () => {
     const history = useHistory();
 
 //почему тут нужно  const
-   const handleSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
         let formData = new FormData(event.target);
         let data = Object.fromEntries(formData);
@@ -24,8 +24,8 @@ const ContactPage = () => {
     return (
         <div className='responsive-container'>
             <section className='contact-container'>
-                <h3 className='secondary-header'>Contact Us</h3>
-                <form onSubmit={handleSubmit} className='message-send-successful'>
+                <form onSubmit={handleSubmit} className="group-control">
+                    <h3 className='secondary-header header-center'>Contact Us</h3>
                     <div className='group'>
                         <label className='group__name' htmlFor='name'>Name</label>
                         <input className='group__input'

@@ -1,5 +1,9 @@
 .contact-container {
   margin: 0 1rem;
+
+  @media(min-width: 769px) {
+    margin: 1.5rem;
+  }
 }
 
 .group {
@@ -45,6 +49,21 @@
   }
 
   &__submit {
-    align-self: stretch;
+    align-self: center;
+
+    @media(min-width: 769px) {
+      margin-top: 1rem;
+    }
   }
+}
+
+.group-control{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media(min-width: 769px) {
+    .header-center{
+      text-align: center;
+    }
 }

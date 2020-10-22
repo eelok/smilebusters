@@ -9,8 +9,12 @@
     height: 200px;
     width: 300px;
     margin: 1rem;
-    background-color: #4c75a3;
     border-radius: 5px;
+
+    @media(min-width: 769px) {
+      height: 360px;
+      width: 580px;
+    }
   }
 
   &__header{

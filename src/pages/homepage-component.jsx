@@ -11,7 +11,7 @@ const HomePage = () => {
                 <h1>Smile<span className="deco-one">busters</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, expedita.</p>
                 <p>jazz - <span className="deco-one">funk</span> - fusion band</p>
-                <button className='btn btn-home margin-top'>News</button>
+                <button className='btn margin-top'>News</button>
             </div>
         </section>
     )
