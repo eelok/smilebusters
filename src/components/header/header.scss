@@ -1,14 +1,14 @@
 .header-wrapper {
   width: 100%;
-  //box-shadow: 1px 1px 1px var(--secondary-color-brown-rgba);
-  border-bottom: 1px solid var(--secondary-color-choco-brown);
-  background-color: var(--color-white);
+  background-color: red;
+  box-shadow: 1px 1px 1px var(--secondary-color-brown-rgba);
+  //background-color: var(--color-white);
 }
 
 .header {
   width: 100%;
-  border-bottom: 1px solid var(--secondary-color-choco-brown);
-  background-color: var(--color-white);
+  //box-shadow: 1px 1px 1px var(--secondary-color-brown-rgba);
+  //background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
   z-index: 1000;
