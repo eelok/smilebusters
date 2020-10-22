@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     padding: 1rem 0;
-    border-bottom: 0.5px solid #111;
+    border-bottom: 0.5px solid var(--color-black);
 
     img {
       width: 160px;
@@ -17,7 +17,7 @@
       text-align: left;
 
       a {
-        color: #2466AE;
+        color: var(--link-color);
       }
 
       h3 {
@@ -45,20 +45,4 @@
     }
   }
 
-  :first-child {
-    //padding: 0 0 1rem 0;
-    //padding: 0;
-  }
-
-
 }
-
-//.container {
-//
-//  @media(min-width: 769px){
-//    margin-top: 0;
-//  }
-//
-///
-//  }
-//}

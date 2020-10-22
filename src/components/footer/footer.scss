@@ -26,7 +26,7 @@
 
     &--instagram {
       background-image: url("./../../assets/instagram.svg");
-      background-color: #bc2a8d;
+      background-color: var(--instagram-color);
       background-size: 76%;
       background-position: center;
       background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 
     &--vk {
       background-image: url("./../../assets/vk.svg");
-      background-color: #4c75a3;
+      background-color: var(--vk-color);
       background-size: 76%;
       background-position: center;
       background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 
     &--youtube {
       background-image: url("./../../assets/youtube.svg");
-      background-color: #c4302b;
+      background-color: var(--youtube-color);
       background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;

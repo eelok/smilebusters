@@ -94,7 +94,8 @@
     text-transform: uppercase;
     cursor: pointer;
     padding-right: 1rem;
-    color: #111;
+    color: var(--secondary-color-choco-brown);
+    font-weight: bold;
 
 
     @media(min-width: 769px) {
@@ -106,7 +107,7 @@
   //functionality
   &__checkbox:checked ~ &__background {
     transform: scale(80);
-    background-color: #E9E6DF;
+    background-color: var(--color-crem-white);
   }
 
   &__checkbox:checked ~ &__nav {
@@ -124,8 +125,7 @@
       width: 1.80rem;
       height: 2px;
       border-radius: 5px;
-      //background-color: #AD2118;
-      background-color: #461500;;
+      background-color: var(--secondary-color-choco-brown);
       display: inline-block;
     }
 
@@ -141,7 +141,7 @@
     }
 
     &::after {
-      right: 0px;
+      right: 0;
       top: -0.5rem;
     }
   }

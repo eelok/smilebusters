@@ -1,15 +1,16 @@
 .header-wrapper {
   width: 100%;
+  //box-shadow: 1px 1px 1px var(--secondary-color-brown-rgba);
+  border-bottom: 1px solid var(--secondary-color-choco-brown);
+  background-color: var(--color-white);
 }
 
 .header {
   width: 100%;
+  border-bottom: 1px solid var(--secondary-color-choco-brown);
+  background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
-  color: #111;
-  box-shadow: 1px 1px 1px rgba(70, 21, 0, 0.5);
-  //background-color: #E9E6DF;
-  background-color: white;
   z-index: 1000;
 
   position: fixed;

@@ -4,6 +4,20 @@
     padding: 0;
 }
 
+:root {
+    --main-color-brick-red: #AD2118;
+    --secondary-color-choco-brown: #451400;
+    --secondary-color-brown-rgba: rgba(70, 21, 0, 0.5);
+    --color-white: #f4f4f4;
+    --color-crem-white: #E9E6DF;
+    --color-black: #111;
+    --color-light-grey: rgba(233, 230, 223, 0.4);
+    --instagram-color: #bc2a8d;
+    --vk-color: #4c75a3;
+    --youtube-color: #c4302b;
+    --link-color: #2466AE;
+}
+
 .App {
     padding-top: 60px;
 }
@@ -27,11 +41,11 @@
     cursor: pointer;
 }
 
-.bnt-contact{
+.bnt-contact {
     padding: 0.7rem 1rem;
 }
 
-.bnt-contact:hover{
+.bnt-contact:hover {
     background-color: #9F1924;
 }
 
@@ -40,17 +54,17 @@
     margin: 0 auto;
 }
 
-.main-header{
+.main-header {
     font-size: 1.25rem;
     text-transform: uppercase;
 }
 
-.secondary-header{
+.secondary-header {
     font-size: 1.20rem;
     text-transform: uppercase;
     padding: 0.7rem 0;
 }
 
-.text-highlight{
+.text-highlight {
     color: #AD2118;
 }

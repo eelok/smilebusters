@@ -10,28 +10,12 @@
     background-size: cover;
     height: 85vh;
     width: 100%;
-
-    //position: relative;
-
-    //&:before{
-    //  content: '';
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  height: 85vh;
-    //  width: 100%;
-    //  //z-index: 1000;
-    //  background-color: white;
-    //  opacity: 0.1;
-    //}
-
   }
-
 
 
   &__text {
     text-align: center;
-    color: #461500;
+    color: var(--secondary-color-choco-brown);
 
     @media (min-width: 1201px) {
       display: flex;
@@ -40,9 +24,8 @@
       justify-content: space-between;
     }
 
-    img{
-      //box-shadow: 1px 1px rgba(0,0,0,0.3), -1px -1px rgba(0,0,0, 0.3);
-      @media (min-width: 768px) and (max-width: 1200px){
+    img {
+      @media (min-width: 768px) and (max-width: 1200px) {
         width: 650px;
         height: 300px;
       }
@@ -51,7 +34,7 @@
         width: 550px;
         height: 250px;
       }
-      
+
       @media (min-width: 1201px) {
         height: 0;
         width: 0;
@@ -63,17 +46,16 @@
       margin: 0.3rem 1rem;
       font-size: 2.75rem;
       font-weight: 800;
-      //margin-bottom: 0.5rem;
-      color: #AD2118;
+      color: var(--main-color-brick-red);
       z-index: 3000;
 
       @media (min-width: 1201px) {
         margin: 1rem;
         font-size: 3.5rem;
-        color: white;
+        color: var(--color-white);
 
-        .deco-one{
-          color: #AD2118;
+        .deco-one {
+          color: var(--main-color-brick-red);
         }
       }
     }
@@ -81,21 +63,19 @@
     p {
       font-size: 1.80rem;
       margin: 0 1rem 0.5rem 1rem;
-      color: #451400;
+      color: var(--secondary-color-choco-brown);
 
       @media (min-width: 1201px) {
         margin: 1rem;
         font-size: 2.5rem;
         padding: 0.8rem;
-        font-weight: 500;
 
-        color: #451400;
-        background-color: white;
+        background-color: var(--color-white);
         border-radius: 1px;
         opacity: 0.7;
 
-        .deco-one{
-          color: #AD2118;
+        .deco-one {
+          color: var(--main-color-brick-red);
           font-weight: bold;
           font-style: italic;
         }
@@ -104,7 +84,7 @@
   }
 }
 
-.btn-home{
+.btn-home {
   margin-top: 2rem;
 
   @media (min-width: 1201px) {

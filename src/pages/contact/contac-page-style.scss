@@ -17,15 +17,15 @@
     width: 100%;
     padding: 3px 3px;
     margin-bottom: 0.7rem;
-    border: 0.1px solid #4c75a3;
+    border: 0.1px solid var(--secondary-color-choco-brown);
     border-radius: 3px;
     outline: none;
 
   }
 
   &__input:focus {
-    background-color: #f5f4f5;
-    border: 2px solid #4c75a3;
+    background-color: var(--color-light-grey);
+    border: 2px solid var(--secondary-color-choco-brown);
   }
 
   &__message {
@@ -34,14 +34,14 @@
     height: 250px;
     padding: 3px 3px;
     margin-bottom: 0.7rem;
-    border: 0.1px solid #4c75a3;
+    border: 0.1px solid var(--secondary-color-choco-brown);
     border-radius: 3px;
     outline: none;
   }
 
   &__message:focus {
-    background-color: #f5f4f5;
-    border: 2px solid #4c75a3;
+    background-color: var(--color-light-grey);
+    border: 2px solid var(--secondary-color-choco-brown);
   }
 
   &__submit {
