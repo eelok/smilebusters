@@ -1,14 +1,14 @@
 .header-wrapper {
   width: 100%;
-  //background-color: red;
-  box-shadow: 1px 1px 1px var(--secondary-color-brown-rgba);
-  //background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 0 6px var(--secondary-color-brown-rgba);
 }
 
 .header {
   width: 100%;
-  //box-shadow: 1px 1px 1px var(--secondary-color-brown-rgba);
-  //background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
   z-index: 1000;

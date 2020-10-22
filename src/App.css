@@ -6,6 +6,7 @@
 
 :root {
     --main-color-brick-red: #AD2118;
+    --color-brick-red-bnt-hover:#9F1924;
     --secondary-color-choco-brown: #451400;
     --secondary-color-brown-rgba: rgba(70, 21, 0, 0.5);
     --color-white: #f4f4f4;
@@ -22,11 +23,6 @@
     padding-top: 60px;
 }
 
-@media (min-width: 769px) {
-    .App {
-        padding-top: 0;
-    }
-}
 
 .btn {
     width: 250px;
@@ -35,8 +31,8 @@
     border-radius: 2px;
     font-size: 1rem;
     text-transform: uppercase;
-    background-color: #be1e2c;
-    color: #f4f4f4;
+    background-color: var(--main-color-brick-red);
+    color: var(--color-white);
     outline: none;
     cursor: pointer;
 }
@@ -46,7 +42,7 @@
 }
 
 .bnt-contact:hover {
-    background-color: #9F1924;
+    background-color: var(--color-brick-red-bnt-hover);
 }
 
 .responsive-container {
@@ -66,5 +62,5 @@
 }
 
 .text-highlight {
-    color: #AD2118;
+    color: var(--main-color-brick-red);
 }
