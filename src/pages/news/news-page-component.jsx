@@ -14,7 +14,7 @@ class NewsPage extends Component {
     render() {
         const {news} = this.state;
         return (
-            <div className="responsive-container">
+            <div className="responsive-container news-page">
                 <header className="news__header">
                     <h2 className='main-header'>News</h2>
                 </header>

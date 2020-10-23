@@ -1,16 +1,19 @@
+.news-page{
+  background-color: var(--color-white-paper);
+}
+
 .news__header {
   text-align: center;
-  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .news {
   margin: 0 0.5rem;
 
   &__content {
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-white-paper);
     margin-bottom: 1rem;
   }
 
@@ -21,11 +24,10 @@
 
   &__title {
     padding: 1.25rem;
-    //background-color: var(--secondary-color-choco-brown);
     background-color: var(--main-color-brick-red);
     font-size: 1.5rem;
     flex-basis: 50%;
-    color: var(--color-crem-white);
+    color: var(--color-white-paper);
   }
 
   &__description{
@@ -39,9 +41,7 @@
 
   &__details-box {
     background-color: var(--secondary-color-choco-brown);
-    //background-color: var(--main-color-brick-red);
-    padding: 1.25rem;
-    //opacity: 0.9;
+    padding: 1.3rem;
   }
 
   &__date-time {
