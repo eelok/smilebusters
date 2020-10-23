@@ -21,7 +21,8 @@
 
   &__title {
     padding: 1.25rem;
-    background-color: var(--secondary-color-choco-brown);
+    //background-color: var(--secondary-color-choco-brown);
+    background-color: var(--main-color-brick-red);
     font-size: 1.5rem;
     flex-basis: 50%;
     color: var(--color-crem-white);
@@ -37,8 +38,10 @@
   }
 
   &__details-box {
-    background-color: var(--main-color-brick-red);
+    background-color: var(--secondary-color-choco-brown);
+    //background-color: var(--main-color-brick-red);
     padding: 1.25rem;
+    //opacity: 0.9;
   }
 
   &__date-time {
