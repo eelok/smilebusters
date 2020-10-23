@@ -8,6 +8,7 @@ import VideosPage from "./pages/videos-page-component";
 import Header from "./components/header/header-component";
 import Footer from './components/footer/footer-component';
 import MessagePage from './pages/thank-you-page/thank-you-page-component';
+import NewsPage from "./pages/news/news-page-component";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/contact" component={ContactPage}/>
                 <Route path='/message' component={MessagePage}/>
                 <Route path="/videos" component={VideosPage}/>
+                <Route path='/news' component={NewsPage}/>
             </Switch>
             <Footer/>
         </div>
