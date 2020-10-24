@@ -5,7 +5,7 @@ const NEWS_DATA = [
         title: 'Концерт в клубе B2',
         dateTime: '24 Декабря 2020г 19:00',
         place: 'г. Ростов-на-Дону ул. Большая Зеленая д.56',
-        description: 'Smilebusters выступает со звездами',
+        description: 'Smilebusters на одной сцене со звездами.',
         img_url: 'https://picsum.photos/id/1024/300/200',
     },
     {
