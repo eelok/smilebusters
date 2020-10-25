@@ -41,9 +41,8 @@ class NewsPage extends Component {
                                     <div className="news__description"><p>{item.description}</p></div>
                                 </div>
                                 <div className="news__details-box">
-                                    <div className="news__date-time"></div>
-                                    <h4 className="news__address">{item.place}</h4>
-                                    {/*<img src={item.img_url} alt="visual information"/>*/}
+                                    <div className="news__date-time">{item.dayAndTime}</div>
+                                    <h4 className="news__address">{item.address}</h4>
                                 </div>
                             </section>
                         ))
