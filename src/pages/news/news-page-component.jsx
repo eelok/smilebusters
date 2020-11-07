@@ -12,17 +12,55 @@ class NewsPage extends Component {
         }
     }
 
+    jsonToDocument = function (value) {
+        if (!isNaN(value)) {
+            if (value.toString().indexOf('.') != -1)
+                return { 'doubleValue': value };
+            else
+                return { 'integerValue': value };
+        } else if (value === 'true' || value === 'false' || typeof value == 'boolean') {
+            return { 'booleanValue': value };
+        } else if (Date.parse(value)) {
+            return { 'timestampValue': value };
+        } else if (typeof value == 'string') {
+            return { 'stringValue': value };
+        } else if (value && value.constructor === Array) {
+            return { 'arrayValue': { values: value.map(v => this.jsonToDocument(v)) } };
+        } else if (typeof value === 'object') {
+            let obj = {};
+            for (let o in value) {
+                obj[o] = this.jsonToDocument(value[o]);
+            }
+            return { 'mapValue': { fields: obj } };
+        }
+    }
+
     async componentDidMount() {
-        let concertReference = db.collection('concerts');
-        concertReference.orderBy('startDate', 'desc').get().then((querySnapshot) => {
-            let concerts = [];
-            querySnapshot.forEach((doc) => {
-                concerts.push({id: doc.id, ...doc.data()});
+        let url = 'https://firestore.googleapis.com/v1/projects/smilebusters/databases/(default)/documents/concerts?key=AIzaSyB6EVbwJNzN-duQ2oCEBwmnvjpXB9DOx6I';
+        let response = await fetch(url);
+        let firestoreObject = await response.json();
+        let vals = firestoreObject.documents.filter(doc => !!doc.fields).map(doc => {
+            let obj = Object.entries(doc.fields).map(([key, value]) => {
+                return {key, value: Object.entries(value)[0][1]};
             });
-            this.setState({concerts: concerts})
-        }).catch(function(error) {
-            console.log("Error getting document:", error);
+            let res = {};
+            obj.forEach(kv => {
+                res[kv.key] = Date.parse(kv.value) ? Date.parse(kv.value) : kv.value;
+            });
+            return res;
         });
+
+        this.setState({concerts: vals});
+        // let concertReference = db.collection('concerts');
+        // let querySnapshot = await concertReference
+        //     .orderBy('startDate', 'desc')
+        //     .get();
+        // console.log('docs', querySnapshot.docs);
+        // let concerts = querySnapshot.docs.map((doc) => {
+        //     return {id: doc.id, ...doc.data()};
+        // });
+        // console.log('concerts', concerts);
+        // this.setState({concerts: concerts});
     }
 
     render() {
@@ -42,7 +80,7 @@ class NewsPage extends Component {
                                 </div>
                                 <div className="news__details-box">
                                     <div className="news__date-time">
-                                        <Moment format="D MMMM yyyy, HH:mm">{item.startDate.toDate()}</Moment>
+                                        <Moment format="D MMMM yyyy, HH:mm">{item.startDate}</Moment>
                                     </div>
                                     <h4 className="news__address">{item.address}</h4>
                                 </div>
