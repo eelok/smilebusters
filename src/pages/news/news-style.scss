@@ -1,7 +1,3 @@
-.news-page {
-  background-color: var(--color-white-paper);
-}
-
 .news__header {
   text-align: center;
   padding: 1rem;
@@ -52,8 +48,8 @@
     text-align: left;
     line-height: 1.2;
     flex-basis: 50%;
-    background-color: white;
-    color: var(--secondary-color-choco-brown);
+    background-color: var(--color-white-paper);
+    color: var(--color-black);
   }
 
   &__details-box {
