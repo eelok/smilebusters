@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import './videos-page-style.scss'
+import {YOUTUBE_PLAYLIST_URL} from "../constants";
 
 class VideosPage extends Component {
 
@@ -12,10 +13,7 @@ class VideosPage extends Component {
     }
 
     async componentDidMount() {
-        let key = 'AIzaSyD8_AOJJfBztUSGKL8DP2aYf4FWM_iMLx0';
-        let playlistId = 'PLQG761_nUb0p0H9d5xwdhxpsN9WMdvVzw';
-        let url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${key}&playlistId=${playlistId}&part=snippet&maxResults=50`;
-        let response = await fetch(url);
+        let response = await fetch(YOUTUBE_PLAYLIST_URL);
         let youtubeObject = await response.json();
         const {items} = youtubeObject;
         this.setState({playlistItems: items});
