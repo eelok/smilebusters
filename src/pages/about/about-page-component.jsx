@@ -16,7 +16,7 @@ class AboutPage extends React.Component {
         return (
             <article className='responsive-container'>
                 <header className='about-header'>
-                    <h2 className='main-header'>Our Story</h2>
+                    <h2 className='main-header'>Наша История</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam cumque dolor error fuga porro
                         quae
                         recusandae similique ullam voluptas! Beatae doloribus dolorum explicabo maiores pariatur
@@ -24,7 +24,7 @@ class AboutPage extends React.Component {
                         quo,
                         soluta voluptates.
                     </p>
-                    <h3 className='secondary-header'>Crew</h3>
+                    <h3 className='secondary-header'>Команда</h3>
                 </header>
                 <section className="cards">
                     {

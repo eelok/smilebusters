@@ -27,7 +27,7 @@ class NewsPage extends Component {
         return (
             <div className="responsive-container">
                 <header className="news__header">
-                    <h2 className='main-header'>Concerts</h2>
+                    <h2 className='main-header'>Концерты</h2>
                 </header>
                 <section className="news">
                     {
