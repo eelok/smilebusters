@@ -30,11 +30,11 @@ class ConcertsPage extends Component {
             }
             return 0;
         }
-
-        concerts.sort(compare);
-        let newConserts = concerts;
-        let filter = newConserts.filter(concert => (concert.startDate > Date.now()));
-        this.setState({concerts: filter});
+        ///[..concerts] это делает копию array concerts
+        let sortedAndFilteredConcerts = [...concerts]
+            .sort(compare)
+            .filter(concert => (concert.startDate > Date.now()));
+        this.setState({concerts: sortedAndFilteredConcerts});
     }
 
     render() {
