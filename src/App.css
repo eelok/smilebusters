@@ -13,6 +13,7 @@
     --color-crem-white: #E9E6DF;
     --color-white-paper: #F2F2F2;
     --color-black: #111;
+    --color-black-light: #212529;
     --color-light-grey: rgba(233, 230, 223, 0.4);
     --instagram-color: #bc2a8d;
     --vk-color: #4c75a3;
@@ -52,10 +53,10 @@
     margin: 0 auto;
 }
 
-.main-header {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-}
+/*.main-header {*/
+/*    font-size: 1.25rem;*/
+/*    text-transform: uppercase;*/
+/*}*/
 
 .secondary-header {
     font-size: 1.20rem;

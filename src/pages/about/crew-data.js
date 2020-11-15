@@ -2,7 +2,7 @@ const CREW_DATA = [
     {
         id : 1,
         name : "Adriano Celentano",
-        instrument: 'drums',
+        instrument: 'Барабаны',
         img_url: "https://picsum.photos/id/1/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 
@@ -11,8 +11,8 @@ const CREW_DATA = [
     },
     {
         id : 2,
-        name : "Anastasia Tkachenko",
-        instrument: 'piano',
+        name : "Анастасия Ткаченко",
+        instrument: 'Клавиши',
         img_url : "https://picsum.photos/id/836/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 
@@ -41,8 +41,8 @@ const CREW_DATA = [
     },
     {
         id : 5,
-        name : "Aleksei Tkachenko",
-        instrument: 'manager',
+        name : "Алексей Ткаченко",
+        instrument: 'Менаджер',
         img_url : "https://picsum.photos/id/1044/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 

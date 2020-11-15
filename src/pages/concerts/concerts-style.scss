@@ -1,0 +1,84 @@
+.concerts-header {
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.concerts {
+  margin: 0 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    flex-basis: 100%;
+
+    @media (min-width: 769px) {
+      flex-basis: 50%;
+      padding: 0 0.3rem;
+      max-height: 400px;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &__date-time{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 150px;
+    border-right: 1px solid var(--color-black-light);
+  }
+
+  &__information{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    color: #212529;
+
+    width: 250px;
+    height: 180px;
+  }
+
+  //&__row {
+  //  display: flex;
+  //  flex-direction: row;
+  //
+  //  @media (min-width: 769px) {
+  //    height: 200px;
+  //  }
+  //
+  //}
+
+  &__title {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    padding: 0.3rem 0;
+  }
+
+  &__address {
+    font-size: 1rem;
+    color: #7e7e7e;
+  }
+
+  //&__details-box {
+  //  background-color: var(--secondary-color-choco-brown);
+  //  color: var(--color-crem-white);
+  //  padding: 1.3rem;
+  //
+  //  @media (min-width: 769px) {
+  //    height: 150px;
+  //  }
+  //}
+
+}
