@@ -39,7 +39,7 @@ class MenuNavMobile extends Component {
                 <nav className='navigation__nav'>
                     <ul className='navigation__list'>
                         <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/videos"}>Видео</Link></li>
-                        <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/news"}>Концерты</Link></li>
+                        <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/news"}>Афиша</Link></li>
                         <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/about"}>О Нас</Link></li>
                         <li className='vertical-margin' onClick={this.handleMenuItemClicked}><Link className="navigation__link" to={"/contact"}>Контакты</Link></li>
                     </ul>
