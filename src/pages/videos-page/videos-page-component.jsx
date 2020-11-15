@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import './videos-page-style.scss'
-import {YOUTUBE_PLAYLIST_URL} from "../constants";
+import {YOUTUBE_PLAYLIST_URL} from "../../constants";
 
 class VideosPage extends Component {
 

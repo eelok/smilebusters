@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import {Route, Switch} from 'react-router-dom';
-import HomePage from "./pages/homepage-component";
+import HomePage from "./pages/home/homepage-component";
 import AboutPage from "./pages/about/about-page-component"
 import ContactPage from "./pages/contact/contact-page-component";
-import VideosPage from "./pages/videos-page-component";
+import VideosPage from "./pages/videos-page/videos-page-component";
 import Header from "./components/header/header-component";
 import Footer from './components/footer/footer-component';
 import MessagePage from './pages/thank-you-page/thank-you-page-component';
