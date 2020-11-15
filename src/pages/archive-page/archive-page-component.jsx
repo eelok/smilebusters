@@ -1,12 +1,11 @@
 import React, {Component} from "react";
 import Moment from "react-moment";
-import './concerts-style.scss';
+// import './concerts-style.scss';
 import {mapFirebaseDoc} from "../../functions/mapFirebaseDoc";
 import {CONCERTS_URL} from "../../constants";
 import 'moment/locale/ru';
-import {Link} from "react-router-dom";
 
-class ConcertsPage extends Component {
+class Archive extends Component {
     constructor(props) {
         super(props);
 
@@ -22,20 +21,19 @@ class ConcertsPage extends Component {
             .filter(doc => doc.fields)
             .map(mapFirebaseDoc);
 
-        function compare(a, b) {
-            if (a.startDate < b.startDate) {
+        function compare(a,b){
+            if(a.startDate < b.startDate){
                 return -1
             }
-            if (a.startDate > b.startDate) {
+            if(a.startDate > b.startDate){
                 return 1
             }
             return 0;
         }
-
         ///[..concerts] это делает копию array concerts
         let sortedAndFilteredConcerts = [...concerts]
             .sort(compare)
-            .filter(concert => (concert.startDate >= Date.now()));
+            .filter(concert => (concert.startDate < Date.now()));
         this.setState({concerts: sortedAndFilteredConcerts});
     }
 
@@ -44,8 +42,7 @@ class ConcertsPage extends Component {
         return (
             <div className="responsive-container">
                 <header className="concerts-header">
-                    <h2>Афиша</h2>
-                    <Link className="concerts-header__archive" to={"/archive"}>Архив</Link>
+                    <h2>Архив</h2>
                 </header>
                 <section className="concerts">
                     {
@@ -72,4 +69,4 @@ class ConcertsPage extends Component {
     }
 }
 
-export default ConcertsPage;
+export default Archive;

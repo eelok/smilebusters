@@ -9,7 +9,7 @@ import Header from "./components/header/header-component";
 import Footer from './components/footer/footer-component';
 import MessagePage from './pages/thank-you-page/thank-you-page-component';
 import ConcertsPage from "./pages/concerts/concers-page-component";
-
+import Archive from "./pages/archive-page/archive-page-component"
 function App() {
     return (
         <div className="App">
@@ -21,6 +21,7 @@ function App() {
                 <Route path='/message' component={MessagePage}/>
                 <Route path="/videos" component={VideosPage}/>
                 <Route path='/events' component={ConcertsPage}/>
+                <Route path='/archive' component={Archive}/>
             </Switch>
             <Footer/>
         </div>
