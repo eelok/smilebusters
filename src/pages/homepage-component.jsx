@@ -7,7 +7,7 @@ const HomePage = () => {
     const history = useHistory();
 
     const handleNewsClicked =() =>{
-        history.push('./news')
+        history.push('./events')
     }
 
     return (
