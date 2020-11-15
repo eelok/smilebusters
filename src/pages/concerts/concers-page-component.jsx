@@ -20,8 +20,21 @@ class ConcertsPage extends Component {
         const concerts = firestoreObject.documents
             .filter(doc => doc.fields)
             .map(mapFirebaseDoc);
-        console.log((concerts))
-        this.setState({concerts: concerts});
+
+        function compare(a,b){
+            if(a.startDate < b.startDate){
+                return -1
+            }
+            if(a.startDate > b.startDate){
+                return 1
+            }
+            return 0;
+        }
+
+        concerts.sort(compare);
+        let newConserts = concerts;
+        let filter = newConserts.filter(concert => (concert.startDate > Date.now()));
+        this.setState({concerts: filter});
     }
 
     render() {
@@ -30,6 +43,7 @@ class ConcertsPage extends Component {
             <div className="responsive-container">
                 <header className="concerts-header">
                     <h2>Афиша</h2>
+                    <h3 className="concerts-header__archive">Архив</h3>
                 </header>
                 <section className="concerts">
                     {
