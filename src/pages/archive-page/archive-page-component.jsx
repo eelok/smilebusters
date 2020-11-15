@@ -43,6 +43,7 @@ class Archive extends Component {
             <div className="responsive-container">
                 <header className="concerts-header">
                     <h2>Архив</h2>
+                    <button className="btn-small"  onClick={() => this.props.history.push('/events')}>Афиша</button>
                 </header>
                 <section className="concerts">
                     {
