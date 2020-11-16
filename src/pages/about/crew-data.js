@@ -1,9 +1,9 @@
 const CREW_DATA = [
     {
         id : 1,
-        name : "Михаил Логинов",
-        instrument: 'Ударные',
-        img_url: "https://picsum.photos/id/1/345/200",
+        name : "Анастасия Ткаченко",
+        instrument: 'Клавишные',
+        img_url : "https://picsum.photos/id/836/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 
                similique ullam voluptas! Beatae doloribus dolorum explicabo
@@ -11,9 +11,9 @@ const CREW_DATA = [
     },
     {
         id : 2,
-        name : "Анастасия Ткаченко",
-        instrument: 'Клавишные',
-        img_url : "https://picsum.photos/id/836/345/200",
+        name : "Михаил Логинов",
+        instrument: 'Ударные',
+        img_url: "https://picsum.photos/id/1/345/200",
         info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                A aperiam cumque dolor error fuga porro quae recusandae 
                similique ullam voluptas! Beatae doloribus dolorum explicabo
