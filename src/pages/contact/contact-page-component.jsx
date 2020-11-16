@@ -25,9 +25,9 @@ const ContactPage = () => {
         <div className='responsive-container'>
             <section className='contact-container'>
                 <form onSubmit={handleSubmit} className="group-control">
-                    <h3 className='secondary-header header-center'>Contact Us</h3>
+                    <h3 className='contact-header'>Свяжитесь с нами</h3>
                     <div className='group'>
-                        <label className='group__name' htmlFor='name'>Name</label>
+                        <label className='group__name' htmlFor='name'>Имя</label>
                         <input className='group__input'
                                type='text'
                                id='name'
@@ -36,7 +36,7 @@ const ContactPage = () => {
                         />
                     </div>
                     <div className='group'>
-                        <label className='group__name' htmlFor='email'>Email</label>
+                        <label className='group__name' htmlFor='email'>Ел. почта</label>
                         <input className='group__input'
                                type='email'
                                id='email'
@@ -44,7 +44,7 @@ const ContactPage = () => {
                                required={true}/>
                     </div>
                     <div className='group'>
-                        <label className='group__name' htmlFor='phone'>Phone <span>(Optional)</span></label>
+                        <label className='group__name' htmlFor='phone'>Телефон <span>(Не обязательное поле)</span></label>
                         <input className='group__input'
                                type='tel'
                                name='phone'
@@ -52,7 +52,7 @@ const ContactPage = () => {
                         />
                     </div>
                     <div className='group'>
-                        <label className='group__name' htmlFor='message'>Your Message</label>
+                        <label className='group__name' htmlFor='message'>Ваше Сообщение</label>
                         <textarea className='group__message'
                                   id='message'
                                   name='message'
