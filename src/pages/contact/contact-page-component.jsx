@@ -59,7 +59,7 @@ const ContactPage = () => {
                         />
                     </div>
                     <div className='group'>
-                        <button className='btn bnt-contact group__submit' type="submit" name='submit'>Submit</button>
+                        <button className='btn bnt-contact group__submit' type="submit" name='submit'>Отправить</button>
                     </div>
                 </form>
             </section>
