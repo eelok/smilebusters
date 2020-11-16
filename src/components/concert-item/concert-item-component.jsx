@@ -1,7 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 
-const Concert = ({startDate, title, description, address}) =>{
+const ConcertItem = ({startDate, title, description, address}) =>{
 
     return(
         <section className="concerts__content" >
@@ -21,4 +21,4 @@ const Concert = ({startDate, title, description, address}) =>{
     );
 }
 
-export default Concert;
+export default ConcertItem;

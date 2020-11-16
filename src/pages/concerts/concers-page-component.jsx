@@ -1,11 +1,9 @@
 import React, {Component} from "react";
-import Moment from "react-moment";
 import './concerts-style.scss';
 import {mapFirebaseDoc} from "../../functions/mapFirebaseDoc";
 import {CONCERTS_URL} from "../../constants";
 import 'moment/locale/ru';
-import {Link} from "react-router-dom";
-import Concert from "../../components/concert/concert-item-component";
+import Concerts from "../../components/concerts/concerts-component";
 
 class ConcertsPage extends Component {
     constructor(props) {
@@ -43,19 +41,7 @@ class ConcertsPage extends Component {
     render() {
         const {concerts} = this.state;
         return (
-            <div className="responsive-container">
-                <header className="concerts-header">
-                    <h2>Афиша</h2>
-                    <Link className="concerts-header__archive" to={"/archive"}>Архив</Link>
-                </header>
-                <section className="concerts">
-                    {
-                        concerts.map((item, index) => (
-                            <Concert key={index} {...item} />
-                        ))
-                    }
-                </section>
-            </div>
+            <Concerts concerts={concerts} pageTitle={'Афиша'} linkTitle={'Архив'} linkPath={'archive'}/>
         );
     }
 }

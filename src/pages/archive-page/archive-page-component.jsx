@@ -1,10 +1,9 @@
 import React, {Component} from "react";
-import Moment from "react-moment";
 // import './concerts-style.scss';
 import {mapFirebaseDoc} from "../../functions/mapFirebaseDoc";
 import {CONCERTS_URL} from "../../constants";
 import 'moment/locale/ru';
-import Concert from "../../components/concert/concert-item-component";
+import Concerts from "../../components/concerts/concerts-component";
 
 class Archive extends Component {
     constructor(props) {
@@ -41,19 +40,7 @@ class Archive extends Component {
     render() {
         const {concerts} = this.state;
         return (
-            <div className="responsive-container">
-                <header className="concerts-header">
-                    <h2>Архив</h2>
-                    <button className="btn-small"  onClick={() => this.props.history.push('/events')}>Афиша</button>
-                </header>
-                <section className="concerts">
-                    {
-                        concerts.map((item, index) => (
-                            <Concert key={index} {...item}/>
-                        ))
-                    }
-                </section>
-            </div>
+            <Concerts pageTitle={'Архив'} concerts={concerts} linkTitle={'Афиша'} linkPath={'events'}/>
         );
     }
 }
