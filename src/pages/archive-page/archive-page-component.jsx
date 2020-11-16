@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import {mapFirebaseDoc} from "../../functions/mapFirebaseDoc";
-import {CONCERTS_URL} from "../../constants";
 import 'moment/locale/ru';
 import Concerts from "../../components/concerts/concerts-component";
+import {loadConcerts} from "../../functions/loadConcerts";
 
 class Archive extends Component {
+
     constructor(props) {
         super(props);
 
@@ -13,33 +13,32 @@ class Archive extends Component {
         }
     }
 
-    async componentDidMount() {
-        const response = await fetch(CONCERTS_URL);
-        const firestoreObject = await response.json();
-        const concerts = firestoreObject.documents
-            .filter(doc => doc.fields)
-            .map(mapFirebaseDoc);
+    filter = (concert) => (concert.startDate < Date.now());
 
-        function compare(a,b){
-            if(a.startDate < b.startDate){
-                return 1
-            }
-            if(a.startDate > b.startDate){
-                return -1
-            }
-            return 0;
+    compare = (a, b) => {
+        if(a.startDate < b.startDate){
+            return 1
         }
-        ///[..concerts] это делает копию array concerts
-        let sortedAndFilteredConcerts = [...concerts]
-            .sort(compare)
-            .filter(concert => (concert.startDate < Date.now()));
-        this.setState({concerts: sortedAndFilteredConcerts});
+        if(a.startDate > b.startDate){
+            return -1
+        }
+        return 0;
+    }
+
+    async componentDidMount() {
+        let concerts = await loadConcerts(this.compare, this.filter);
+        this.setState({concerts: concerts});
     }
 
     render() {
         const {concerts} = this.state;
         return (
-            <Concerts pageTitle={'Архив'} concerts={concerts} linkTitle={'Афиша'} linkPath={'events'}/>
+            <Concerts
+                pageTitle={'Архив'}
+                concerts={concerts}
+                linkTitle={'Афиша'}
+                linkPath={'events'}
+            />
         );
     }
 }

@@ -1,8 +1,17 @@
 .about-header {
   text-align: center;
-  margin: 0.5rem 1rem;;
+  margin: 0.5rem 1rem;
 
-  p {
+  &__title {
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+
+    @media(min-width: 769px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__story {
     line-height: 1.5;
     padding: 0.5rem;
   }

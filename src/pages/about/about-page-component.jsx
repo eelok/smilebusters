@@ -16,8 +16,8 @@ class AboutPage extends React.Component {
         return (
             <article className='responsive-container'>
                 <header className='about-header'>
-                    <h2 className='main-header'>Наша История</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam cumque dolor error fuga porro
+                    <h2 className='about-header__title'>Наша История</h2>
+                    <p className='about-header__story'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam cumque dolor error fuga porro
                         quae
                         recusandae similique ullam voluptas! Beatae doloribus dolorum explicabo maiores pariatur
                         provident

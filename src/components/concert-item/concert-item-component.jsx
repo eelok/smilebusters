@@ -1,5 +1,6 @@
 import React from "react";
 import Moment from "react-moment";
+import './concert-item-style.scss'
 
 const ConcertItem = ({startDate, title, description, address}) =>{
 
