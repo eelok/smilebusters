@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import './concerts-style.scss';
 import {mapFirebaseDoc} from "../../functions/mapFirebaseDoc";
 import {CONCERTS_URL} from "../../constants";
 import 'moment/locale/ru';

@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import ConcertItem from "../concert-item/concert-item-component";
+import './concerts-component-style.scss'
 
 const Concerts = ({pageTitle, concerts, linkTitle, linkPath}) => {
 
@@ -8,7 +9,7 @@ const Concerts = ({pageTitle, concerts, linkTitle, linkPath}) => {
         <div className="responsive-container">
             <header className="concerts-header">
                 <h2>{pageTitle}</h2>
-                <Link className="concerts-header__archive" to={`/${linkPath}`} >{linkTitle}</Link>
+                <Link className="concerts-header__link" to={`/${linkPath}`} >{linkTitle}</Link>
             </header>
             <section className="concerts">
                 {
