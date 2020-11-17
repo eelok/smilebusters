@@ -1,24 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import './contac-page-style.scss';
 import {useHistory} from 'react-router-dom';
 import {db} from '../../firebase';
+import Recaptcha from 'react-google-invisible-recaptcha';
 
 const ContactPage = () => {
 
+    let recaptcha;
     const history = useHistory();
+    const [messageSent, setMessageSent] = useState(false);
 
-//почему тут нужно  const
     const handleSubmit = (event) => {
         event.preventDefault();
-        let formData = new FormData(event.target);
-        let data = Object.fromEntries(formData);
-        db.collection('contacts').add(data)
-            .then(() => {
-                history.push('/message')
-            })
-            .catch(error => {
-                alert(error.message)
-            });
+        recaptcha.execute();
+        if(messageSent){
+            let formData = new FormData(event.target);
+            let data = Object.fromEntries(formData);
+            db.collection('contacts').add(data)
+                .then(() => {
+                    history.push('/message')
+                })
+                .catch(error => {
+                    alert(error.message)
+                });
+        }
+    }
+
+    const onResolved = (token) => {
+        setMessageSent(true);
     }
 
     return (
@@ -59,7 +68,17 @@ const ContactPage = () => {
                         />
                     </div>
                     <div className='group'>
-                        <button className='btn bnt-contact group__submit' type="submit" name='submit'>Отправить</button>
+                        <button className='btn bnt-contact group__submit'
+                                type="submit"
+                                name='submit'
+                        >
+                            Отправить
+                        </button>
+                        <Recaptcha
+                            ref = { ref => recaptcha = ref}
+                            sitekey="6LcqAeQZAAAAANQv4lPv_xczR8tMZrts1esP5P-Z"
+                            onResolved={onResolved}
+                        />
                     </div>
                 </form>
             </section>
