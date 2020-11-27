@@ -11,12 +11,15 @@ import MessagePage from './pages/thank-you-page/thank-you-page-component';
 import ConcertsPage from "./pages/concerts/concers-page-component";
 import Archive from "./pages/archive-page/archive-page-component";
 import ReactGa from 'react-ga';
+import { useLocation } from "react-router-dom";
 
 function App() {
+    let location = useLocation();
+    ReactGa.initialize('UA-184090353-1');
+
     useEffect(() => {
-        ReactGa.initialize('UA-184090353-1');
         ReactGa.pageview(window.location.pathname + window.location.search);
-    }, []);
+    }, [location]);
 
     return (
         <div className="App">
