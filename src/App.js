@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import {Route, Switch} from 'react-router-dom';
 import HomePage from "./pages/home/homepage-component";
@@ -9,8 +9,16 @@ import Header from "./components/header/header-component";
 import Footer from './components/footer/footer-component';
 import MessagePage from './pages/thank-you-page/thank-you-page-component';
 import ConcertsPage from "./pages/concerts/concers-page-component";
-import Archive from "./pages/archive-page/archive-page-component"
+import Archive from "./pages/archive-page/archive-page-component";
+import ReactGa from 'react-ga';
+
 function App() {
+    useEffect(() => {
+        ReactGa.initialize('UA-184090353-1')
+
+        ReactGa.pageview(window.location.pathname + window.location.search);
+    }, [])
+
     return (
         <div className="App">
             <Header/>
