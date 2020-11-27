@@ -7,7 +7,6 @@ const ContactPage = () => {
 
     const history = useHistory();
 
-//почему тут нужно  const
     const handleSubmit = (event) => {
         event.preventDefault();
         let formData = new FormData(event.target);
