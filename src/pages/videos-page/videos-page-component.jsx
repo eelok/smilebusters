@@ -13,10 +13,14 @@ class VideosPage extends Component {
     }
 
     async componentDidMount() {
-        let response = await fetch(YOUTUBE_PLAYLIST_URL);
-        let youtubeObject = await response.json();
-        const {items} = youtubeObject;
-        this.setState({playlistItems: items});
+        try {
+            let response = await fetch(YOUTUBE_PLAYLIST_URL);
+            let youtubeObject = await response.json();
+            const {items} = youtubeObject;
+            this.setState({playlistItems: items});
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     render() {

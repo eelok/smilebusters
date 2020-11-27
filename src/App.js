@@ -14,10 +14,9 @@ import ReactGa from 'react-ga';
 
 function App() {
     useEffect(() => {
-        ReactGa.initialize('UA-184090353-1')
-
+        ReactGa.initialize('UA-184090353-1');
         ReactGa.pageview(window.location.pathname + window.location.search);
-    }, [])
+    }, []);
 
     return (
         <div className="App">

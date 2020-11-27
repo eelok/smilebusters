@@ -7,12 +7,12 @@ import ReactGA from 'react-ga';
 const HomePage = () => {
     const history = useHistory();
 
-    const handleNewsClicked =() =>{
-        history.push('./events')
+    const handleNewsClicked = () => {
+        history.push('./events');
         ReactGA.event({
             category: 'Button',
             action: 'Click Afisha button from home page'
-        })
+        });
     }
 
     return (
@@ -25,7 +25,7 @@ const HomePage = () => {
                 <button className='btn margin-top' onClick={handleNewsClicked}>Афиша</button>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default HomePage;
