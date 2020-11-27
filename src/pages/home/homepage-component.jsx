@@ -1,13 +1,18 @@
 import React from "react";
 import {useHistory} from 'react-router-dom';
-import './homepage.scss'
-import '../about/about-page-style.scss'
+import './homepage.scss';
+import '../about/about-page-style.scss';
+import ReactGA from 'react-ga';
 
 const HomePage = () => {
     const history = useHistory();
 
     const handleNewsClicked =() =>{
         history.push('./events')
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click Afisha button from home page'
+        })
     }
 
     return (
