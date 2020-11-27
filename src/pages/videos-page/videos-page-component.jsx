@@ -20,6 +20,7 @@ class VideosPage extends Component {
             this.setState({playlistItems: items});
         } catch (error) {
             console.error(error);
+            this.setState({playlistItems: []});
         }
     }
 
