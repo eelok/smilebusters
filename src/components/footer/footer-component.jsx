@@ -9,7 +9,7 @@ const Footer = () => {
                    href={`https://www.instagram.com/smilebustersband/`}
                 >&nbsp;</a>
                 <a className="social__item social__item--vk"
-                   href={`https://vk.com/smilebusters/`}
+                   href={`https://vk.com/smilebusters_band/`}
                 >&nbsp;</a>
                 <a className="social__item social__item--youtube"
                    href={`https://www.youtube.com/channel/UCXhomF9JifKzZ4CbcP1zLtA/videos`}
