@@ -4,10 +4,7 @@ const CREW_DATA = [
         name : "Анастасия Ткаченко",
         instrument: 'Клавишные',
         img_url : "https://picsum.photos/id/836/345/200",
-        info: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-               A aperiam cumque dolor error fuga porro quae recusandae 
-               similique ullam voluptas! Beatae doloribus dolorum explicabo
-                maiores pariatur provident quo, soluta voluptates.`
+        info: `Играет на фортемьяно с пяти лет. Обожает манго. Любимый предмет в школе "Мир вокруг нас".`
     },
     {
         id : 2,
