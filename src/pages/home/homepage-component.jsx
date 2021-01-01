@@ -20,8 +20,8 @@ const HomePage = () => {
             <div className="content__text">
                 <img src="https://picsum.photos/id/1082/300/200" alt="cover"/>
                 <h1>Smile<span className="deco-one">busters</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, expedita.</p>
-                <p>jazz - <span className="deco-one">funk</span> - fusion band</p>
+                <p>Детская музыкальная</p>
+                <p>джаз - <span className="deco-one">funk</span> - фьюжн группа</p>
                 <button className='btn margin-top' onClick={handleNewsClicked}>Афиша</button>
             </div>
         </section>
