@@ -1,16 +1,27 @@
+import nastya_1x from '../../assets/nastya/nastya-1x.jpg';
+import nastya_2x from '../../assets/nastya/nastya-2x.jpg';
+import michael_1x from '../../assets/michael/michael-1x.jpg';
+import michael_2x from '../../assets/michael/michael-2x.jpg';
+import danil_1x from '../../assets/danil/danil-1x.jpg';
+import danil_2x from '../../assets/danil/danil-2x.jpg';
+import vyacheslav_1x from '../../assets/vyacheslav/vyacheslav-1x.jpg';
+import vyacheslav_2x from '../../assets/vyacheslav/vyacheslav-2x.jpg';
+import alexei_1x from '../../assets/alexei/alexei-1x.jpg';
+import alexei_2x from '../../assets/alexei/alexei-2x.jpg';
+
 const CREW_DATA =
     {
         description: `
             Название Smilebusters появилось благодаря фильму Ghostbusters, который был популярен в годы детства
             Алексея Ткаченко - руководителя группы. Название можно было бы перевести на русский как Улыбаторы 
-            (или притягивающие улыбки) :)
+            или Притягивающие улыбки.
         `,
         persons: [
             {
                 id: 1,
                 name: "Анастасия Ткаченко",
                 instrument: 'Клавишные',
-                img_url: "https://picsum.photos/id/836/345/200",
+                img_url: [nastya_1x, nastya_2x],
                 info: `Настя начала играть на музыкальных инструментах с 2-лет, когда
             папа подарил ей укулеле. В этом же возрасте она начала петь.
             На фортепияно играет с пяти лет. Любит манго и путешествия.`
@@ -19,29 +30,29 @@ const CREW_DATA =
                 id: 2,
                 name: "Михаил Логинов",
                 instrument: 'Ударные',
-                img_url: "https://picsum.photos/id/1/345/200",
-                info: `Михаил - барабанщик от бога. Его хобби - компьютерные игры и спорт`
+                img_url: [michael_1x, michael_2x],
+                info: `Михаил - барабанщик от бога. Его хобби - компьютерные игры и спорт.`
             },
             {
                 id: 3,
                 name: "Данил Пруцкий",
                 instrument: 'гитара',
-                img_url: "https://picsum.photos/id/91/345/200",
-                info: `Данил серъезно изучает музыкальное искусство и виртуозно владеет гитарой. Его хобби - кататься на самокате`
+                img_url: [danil_1x, danil_2x],
+                info: `Данил серъезно изучает музыкальное искусство и виртуозно владеет гитарой. Его хобби - кататься на самокате.`
             },
             {
                 id: 4,
                 name: "Вячеслав Пруцкий",
                 instrument: 'басс гитара',
-                img_url: "https://picsum.photos/id/856/345/200",
+                img_url: [vyacheslav_1x, vyacheslav_2x],
                 info: `Вячеслав увлекается научной фантастикой. Обожает играть на бас-гитаре и плавать на длинные
-        расстояния`
+        расстояния.`
             },
             {
                 id: 5,
                 name: "Алексей Ткаченко",
                 instrument: 'Художественный руководитель',
-                img_url: "https://picsum.photos/id/1044/345/200",
+                img_url: [alexei_1x, alexei_2x],
                 info: `Алексей - движущая сила ансамбля Smilebusters. 
             Он выбирает репертуар, делает арранжировки, организовывает репитиции и выступления.
             Алексей любит джаз и просто хорошую музыку.

@@ -36,7 +36,6 @@
     }
 
     &__info{
-      //background: var(--color-light-grey);
       padding: 0.3rem 0.8rem 0.8rem 0.8rem;
     }
     &__image-cropper{
@@ -51,8 +50,8 @@
     }
 
     &__image{
-      *display: inline;
-      margin-left: -30%;
+      width: 200px;
+      height: 200px;
     }
 
     .crew__name {
