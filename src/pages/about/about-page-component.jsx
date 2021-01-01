@@ -36,6 +36,7 @@ class AboutPage extends React.Component {
                                             src={img_1x}
                                             srcSet={`${img_1x} 1x, ${img_2x} 2x`}
                                             className='card__image'
+                                            alt={person.name}
                                         />
                                     </div>
                                     <div className='card__info'>
