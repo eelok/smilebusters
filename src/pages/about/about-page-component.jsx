@@ -1,6 +1,5 @@
 import React from "react";
 import CREW_DATA from "./crew-data";
-import danil_1x from "../../assets/danil/danil-1x.jpg";
 
 class AboutPage extends React.Component {
 
@@ -17,7 +16,7 @@ class AboutPage extends React.Component {
         return (
             <article className='responsive-container'>
                 <header className='about-header'>
-                    <h2 className='about-header__title'>Наша История</h2>
+                    <h2 className='about-header__title'>О НАС</h2>
                     <p className='about-header__story'>
                         {crew.description}
                     </p>

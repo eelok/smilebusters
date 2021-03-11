@@ -2,8 +2,13 @@
   padding: 1rem 1rem 0 1rem;
   text-align: center;
 
+  @media (min-width: 767px) {
+    padding: 1rem 4rem 0 4rem;
+  }
+
   &__title {
     font-size: 1.7rem;
+    line-height: 1.5;
 
     @media(min-width: 769px) {
       font-size: 2rem;
@@ -13,6 +18,8 @@
   &__story {
     line-height: 1.5;
     padding: 0.5rem;
+    text-align: center;
+    text-justify: inter-word
   }
 }
 
@@ -31,7 +38,7 @@
     align-items: center;
 
     @media(min-width: 500px) {
-      flex-basis: 50%;
+      flex-basis: 40%;
       padding: 0.5rem;
     }
 
@@ -67,7 +74,9 @@
     }
 
     .crew__description {
-      line-height: 1.3;
+      line-height: 1.5;
+      text-align: center;
+      text-justify: inter-word;
     }
   }
 
